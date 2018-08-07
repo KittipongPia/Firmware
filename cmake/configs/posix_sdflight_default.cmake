@@ -63,5 +63,4 @@ set(config_module_list
 	modules/simulator
 	modules/commander
 	modules/navigator
-	platforms/posix/px4_daemon
 )
