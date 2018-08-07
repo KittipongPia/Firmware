@@ -85,7 +85,7 @@ elseif ("${BOARD}" STREQUAL "bbblue")
 	target_link_libraries(px4 PRIVATE robotcontrol)
 
 	add_custom_target(upload
-		COMMAND rsync -arh --progress ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} ${PX4_SOURCE_DIR}/posix-configs/bblue/*.config ${PX4_SOURCE_DIR}/ROMFS debian@BBBluePX4:/home/debian/px4
+		COMMAND rsync -arh --progress ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} ${PX4_SOURCE_DIR}/posix-configs/bbblue/*.config ${PX4_SOURCE_DIR}/ROMFS debian@BBBluePX4:/home/debian/px4
 		DEPENDS px4
 		COMMENT "uploading px4 and data files"
 		USES_TERMINAL
